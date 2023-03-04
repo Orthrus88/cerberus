@@ -10,7 +10,7 @@ def handle_packet(packet):
         # Check if the payload contains the string "password"
         if b"password" in packet[TLS13].payload:
             print("Password detected!")
-    
+
 # Define a capture filter for all TCP traffic
 capture_filter = 'tcp'
 
